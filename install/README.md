@@ -45,6 +45,7 @@ Make sure if you’re using linux or mac you have hidden files shown. So as to s
             ```
         -	Scroll down and edit the site name
         -	Add License Code from user accounts section/products in IGBro website. 
+        -	After you add a game in the IGBro admin panel, you'll get a game ID. add that here. Note Game ID is **not** the same as serial number(SL.no)
 
     -	`application/config/database.php`
         ```php
@@ -65,7 +66,7 @@ Make sure if you’re using linux or mac you have hidden files shown. So as to s
 
 ## Front end
 
-lorem fsdfsdf sdfsdf sdff sdf  
+Installing IGBro front is very straight forward. Everything that the user is required to edit is moved into the `/data` folder.
 
-> sdfsdfd sdffsd fsdf 
-> dsfdsfd sdfdsfsdf
+- Extract the front end zip file
+- 
