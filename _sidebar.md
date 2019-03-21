@@ -5,4 +5,4 @@
 * [Getting Started](/start/)
 * [Installation](/install/)
   * [Admin Panel](/install/?id=admin-panel)
-  * [Front End](/install/)
+  * [Front End](/install/?id=front-end-installation)
