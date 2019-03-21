@@ -9,21 +9,32 @@ In order to install the game we'll first install the admin panel.
 ## Admin panel
 
 
-### Prerequisites ❓
+### Prerequisites 🌟Important🌟
 -	Domain or subdomain should have ssl (https)
+-	The following server requirements:
+    > **PHP v7.2** <br>
+    > **Apache Server** <br>
+    > **Ioncube Loader** for PHP 7.2
 -	It is better to install in a subdomain or sub directory like quiz.mywebsite.com or mywebsite.com/quiz
 
-### Server ⚙️
+### Add a Game in IGBro.com
+-   Login in IGBro and visit your accounts section
+-   Under Products go the **Manage** section of your selected product
+-   Add a game there.
+    -   Name it your game name (doesn't really matter)
+    -   Add the url where you're gonna install it in your website. You'll see more about this soon in this tutorial.
+
+### Import database file ⚙️
 -	Make sure your server has apache or hybrid(apache+nginx)
--	Make a database (store the db_name, username, pwd temporarily)
+-	Make a database (store the db_name, username, pwd temporarily in a notepad)
 -	Use phpmyadmin  to login with the database credentials and import yolo_new.sql
 
 ### Hosting the Files 📁 
 
 Make sure if you’re using linux or mac you have hidden files shown. So as to show .htaccess otherwise you’ll miss it when zipping
-
--	Zip the files together. Don’t include database.sql (for security)
--	Upload the zip file to your server and expand it there
+-   Extract the Admin panel zip file
+-   Zip all the files inside the admin panel folder. Do not miss the `.htaccess` file (show hidden files if you're on a mac or linux)
+-	Upload the new Admin panel zip file to your server and expand it there
 -	Expand(extract) it there in your server. 
 -	Delete the zip file from the server(If you don’t wanna he hacked)
 -	Now open these files in an editor
@@ -64,9 +75,19 @@ Make sure if you’re using linux or mac you have hidden files shown. So as to s
 
 
 
-## Front end
+## Front end Installation
 
 Installing IGBro front is very straight forward. Everything that the user is required to edit is moved into the `/data` folder.
 
-- Extract the front end zip file
-- 
+If you're unfamiliar with Facebook instant games Please read this before continuing: [Instant Games getting started](/start/)
+
+-   Extract the front end zip file
+-   In `data/setup.js` edit your server url
+    ```js
+    // Including the forward slash
+    window.apiUrl = "https://quiz.mywebsite.com/";  
+    ```
+-   There are a lot of things you can customize in the instant game front end file. Read this before continuing : [IG Update Tutorial](https://paper.dropbox.com/doc/YOLO-Front-End-V4-Update--PsNcRlsS70wK6vmckPRXI)
+    >We're improving this documentation soon. But till then please read the above tutorial
+-   Change `logo.png` to your app Icon and you're pretty good to go.
+-   Zip the files and upload it into facebook instant game web hosting tab
