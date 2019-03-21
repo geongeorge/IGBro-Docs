@@ -4,5 +4,5 @@
 * [FAQ](/faq/)
 * [Getting Started](/start/)
 * [Installation](/install/)
-  * [Admin Eanel](/install/?id=admin-panel)
+  * [Admin Panel](/install/?id=admin-panel)
   * [Front End](/install/)

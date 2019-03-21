@@ -7,6 +7,10 @@
  
  >The installation steps below is same for any package you have chosen (pro/plus/lite)
 
+## License:
+
+> We have a licensing system setup and anyone who found to involve in fraudulent activities may be instantly banned from the platform.
+
 ## Guides:
 
 Although not necessary, reading in order would give you the most out of this tutorial.

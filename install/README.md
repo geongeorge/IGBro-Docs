@@ -73,6 +73,11 @@ Make sure if you’re using linux or mac you have hidden files shown. So as to s
     -	`admin`
     -	`password`
 
+-   If everything is working go ahead and delete the `loader-wizard.php` from the root directory.
+-   If you have an error related to **ioncube** goto `https://quiz.mywebsite.com/loader-wizard.php` and it'll guide you on how to fix the error.
+-   After that delete the `loader-wizard.php` file for safety.
+-   You're good to go!
+
 
 
 ## Front end Installation
