@@ -1,9 +1,9 @@
 # IGBro Instant Game
 
- > We're improving this documentation soon. Adding more pictures and videos.<br> 
- > **Till then please read each steps carefully**
 
- Thank you for purchasing IGBro instant game package! The most advanced admin panel script in the planet for instant quiz games.
+ Thank you 👏 for purchasing IGBro instant game package! The most advanced admin panel script in the planet for instant quiz games.
+
+ ![igbro plans](./images/documentation.jpg)
  
  >The installation steps below is same for any package you have chosen (pro/plus/lite)
 

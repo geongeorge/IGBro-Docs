@@ -9,12 +9,14 @@ The game is divided into 2 parts:
 > - **Admin Panel** : `where the quizzes are made`
 > - **Front end** : `which is uploaded to facebook`
 
-![alt text](../images/igdemo.png)
+![Demo](../images/igdemo.png)
 
 In order to install the game we'll first install the admin panel.
 and then install the front end, although order does not matter.
 
 You need a server/hosting to install the admin panel along with a domain *(You can install in a subdirectory/subdomain of a domain that you already use for some other matter)*
+
+<hr>
 
 ## Admin panel
 
@@ -25,29 +27,41 @@ You need a server/hosting to install the admin panel along with a domain *(You c
     > **PHP v7.2** <br>
     > **Apache Server** <br>
     > **Ioncube Loader** for PHP 7.2
--	It is better to install in a subdomain or sub directory like quiz.mywebsite.com or mywebsite.com/quiz
+-	It is better to install in a subdomain or sub directory like **quiz.mywebsite.com** or **mywebsite.com/quiz**
 
 ### Add a Game in IGBro.com
 -   Login in IGBro and visit your accounts section
 -   Under Products go the **Manage** section of your selected product
 -   Add a game there.
-    -   Name it your game name (doesn't really matter)
-    -   Add the url where you're gonna install it in your website. You'll see more about this soon in this tutorial.
+    ![Demo](../images/addgame.png)
+    -   **Name** - Name it your game name (doesn't really matter)
+    -   **URL** - Add the url where you're gonna install it in your website. You'll see more about this soon in this tutorial.
+
+
 
 ### Import database file ⚙️
--	Make sure your server has apache or hybrid(apache+nginx)
--	Make a database (store the db_name, username, pwd temporarily in a notepad)
--	Use phpmyadmin  to login with the database credentials and import yolo_new.sql
+
+In order to make a database you can use mysql via ssh or use any management tools like cpanel or vesta-cp.
+
+-	Make a database in your server (store the db_name, username, pwd temporarily in a notepad)
+-	Use [phpmyadmin](https://phpmyadmin.net)  to login with the database credentials and import `database.sql`
+
+
 
 ### Hosting the Files 📁 
 
 Make sure if you’re using linux or mac you have hidden files shown. So as to show .htaccess otherwise you’ll miss it when zipping
+
+In order to upload files to your server you can use a ftp program file Filezilla, Cyberduck, etc or a management platfrom which includes a file manager like cpanel or vestacp.
+
 -   Extract the Admin panel zip file
--   Zip all the files inside the admin panel folder. Do not miss the `.htaccess` file (show hidden files if you're on a mac or linux)
--	Upload the new Admin panel zip file to your server and expand it there
+-   Zip all the files inside the admin panel folder. Do not miss the `.htaccess` file (show hidden files if you're on a mac or linux or you'll miss it while zipping)
+![zip all files](../images/zipallfiles.gif)
+-	Upload the new Admin panel zip file to your server
 -	Expand(extract) it there in your server. 
 -	Delete the zip file from the server(If you don’t wanna he hacked)
--	Now open these files in an editor
+-   Now you need to configure the admin panel
+-	Open these files in an editor
     -	`application/config/config.php`
         ```php
         $config['base_url'] = 'https://quiz.mywebsite.com/';
@@ -62,7 +76,7 @@ Make sure if you’re using linux or mac you have hidden files shown. So as to s
             define('SITE_NAME', 'Yolo');
             define('SITE_DESC', 'Fun Quizzes');
             define('GAME_ID', '1');
-            define('GAME_LICENSE', '9778-2988-E3EE-XY76');
+            define('GAME_LICENSE', '9778-2988-ABCE-XYZ6');
             ```
         -	Scroll down and edit the site name
         -	Add License Code from user accounts section/products in IGBro website. 
@@ -76,7 +90,7 @@ Make sure if you’re using linux or mac you have hidden files shown. So as to s
         'database' => 'yolo_db',
         ```
         -	edit database,username,password from previously saved data
--	Give the folders app_imgs and uploads full permissions (777)
+-	Give the folders app_imgs and uploads full permissions (777) \- *you'll find this if you right click and choose permissions/properties depending on your file explorer. Just check all the permissions*
 -	Now visit your site https://quiz.mywebsite.com/ 
 -	You’ll be redirected to login page.
 -	Use the credentials to login  :
@@ -89,8 +103,11 @@ Make sure if you’re using linux or mac you have hidden files shown. So as to s
 -   You're good to go!
 
 
+<hr>
+
 
 ## Front end Installation
+
 
 Installing IGBro front is very straight forward. Everything that the user is required to edit is moved into the `/data` folder.
 
@@ -106,3 +123,4 @@ If you're unfamiliar with Facebook instant games Please read this before continu
     >We're improving this documentation soon. But till then please read the above tutorial
 -   Change `logo.png` to your app Icon and you're pretty good to go.
 -   Zip the files and upload it into facebook instant game web hosting tab
+-   You may now push this to production and test your app (You'll get game url in **details** tab)
