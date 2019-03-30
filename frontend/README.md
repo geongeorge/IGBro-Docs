@@ -127,7 +127,8 @@ So read this: Push game to production
 - Form a link with this data :
     **https://fb.gg/play/yoloplay/ml_32**
 - Open this link in the browser
-- Now after the game loads up you’ll see many things popping up in your console. look for “Context ID”
+- Now after the game loads up you’ll see many things popping up in your console. look for “**Context ID**”
+
 ![Context ID in Chrome Console](../images/contextids.png)
 
 - Copy that and open contexts.js in data folder
@@ -150,7 +151,7 @@ So read this: Push game to production
 - Now you can zip, upload and push to production again.
 - Now if you check the previous link will lead to our specific app.
     **https://fb.gg/play/yoloplay/ml_32**
-- You can use this in Facebook ads while promoting the app.
+- Your custom link is ready
 
 <hr>
 

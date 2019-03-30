@@ -119,8 +119,8 @@ If you're unfamiliar with Facebook instant games Please read this before continu
     // Including the forward slash
     window.apiUrl = "https://quiz.mywebsite.com/";  
     ```
--   There are a lot of things you can customize in the instant game front end file. Read this before continuing : [IG Update Tutorial](https://paper.dropbox.com/doc/YOLO-Front-End-V4-Update--PsNcRlsS70wK6vmckPRXI)
-    >We're improving this documentation soon. But till then please read the above tutorial
 -   Change `logo.png` to your app Icon and you're pretty good to go.
+-   There are a lot of things you can customize in the instant game front end file. Read this before continuing : [IGBro Features](/frontend/)
+
 -   Zip the files and upload it into facebook instant game web hosting tab
 -   You may now push this to production and test your app (You'll get game url in **details** tab)
