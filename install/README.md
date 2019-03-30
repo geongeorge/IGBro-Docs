@@ -1,10 +1,20 @@
 # Installation
 
+This documentation explains you how to install IGBro
+
+## Introduction
+
+
 The game is divided into 2 parts:
 > - **Admin Panel** : `where the quizzes are made`
 > - **Front end** : `which is uploaded to facebook`
 
+![alt text](../images/igdemo.png)
+
 In order to install the game we'll first install the admin panel.
+and then install the front end, although order does not matter.
+
+You need a server/hosting to install the admin panel along with a domain *(You can install in a subdirectory/subdomain of a domain that you already use for some other matter)*
 
 ## Admin panel
 
