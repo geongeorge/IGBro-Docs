@@ -8,7 +8,7 @@ Facebook has promised to roll out individual developer verification soon. Untill
 
 ## Do we need to have an Apple developer team id?
 
-Facebook abd Apple has made it impossible to get a game reviewed without one. You can get one from your friends. Although I don't recommend: You can also buy this from other sources like fiverr for cheap.
+Facebook and Apple has made it impossible to get a game reviewed without one. You can get one from your friends. Although I don't recommend: You can also buy this from other sources like fiverr for cheap.
 
 ## Do we have a messenger bot?
 
