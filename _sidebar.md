@@ -9,6 +9,7 @@
   * [Front End](/install/?id=front-end-installation)
 * [Front end Features](/frontend/)
     * [Google Analytics](/frontend/?id=google-analytics)
+    * [Design and Modifications](/frontend/?id=design-modifications-optional)
     * [Set up text and languages](/frontend/?id=set-up-textlanguages-optional)
     * [Adding Deeplinks](/frontend/?id=adding-deeplinks-in-to-specific-quizzes)
 * [Monetization](/monetization/)

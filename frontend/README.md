@@ -94,6 +94,13 @@ window.appStyles = {
 - Read the variable name to understand what does it affect. For instance facebookShareButtonColor is facebook Share Button Color.
 - **appComponent** : Can have values "singleApp" or "singleAppOld" It defines how apps are displayed in home and related page
 ![appComponent](../images/typesofapps.png)
+
+| Type |  Name |
+|-------|-------|
+|  Type 1 |  singleAppOld |
+|  Type 2 |  singleApp |
+
+
 - **oneAppPerLine** : Can have values **true** or **false** It defines how apps are displayed in home and related page
 ![appComponent](../images/gamedesigns.png)
 
